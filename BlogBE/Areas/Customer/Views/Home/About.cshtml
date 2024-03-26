@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "About";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Use this page to detail your site's privacy policy.</p>
+
+@if (User.IsInRole(SD.Role_Admin))
+{
+    <h1> HEHEHEHEHE</h1>
+}
+@if (User.IsInRole(SD.Role_Customer))
+{
+    <h1> HAHAHA</h1>
+}

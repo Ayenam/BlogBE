@@ -1,0 +1,42 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.post-card-stats {
+    max-height: 225px;
+    overflow: hidden;
+}
+.post-card-main-stats{
+    max-heigh:4000px;
+}
+.post-card-content {
+    overflow: hidden;
+    max-height:75px;
+    text-overflow: ellipsis;
+}
+.new-dark-blue {
+    background-color: #0C77A3;
+}
+.new-dark-blue-outline {
+    border-color: #0C77A3;
+    
+}

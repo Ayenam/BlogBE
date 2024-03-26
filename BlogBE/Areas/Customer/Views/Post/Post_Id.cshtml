@@ -1,0 +1,116 @@
+﻿@model PostVM
+
+@{
+    string contentTitle = @Model.Post.content_title;
+    ViewData["Title"] = $"{contentTitle} Post";
+}
+
+@if(Model != null)
+{
+    
+
+<div class="container bg-mute shadow new-dark-blue rounded">
+    <div class="container col py-3 ">
+        <div class="row">
+
+
+                <div class="card post-card-main-stats">
+                    <div class="card-body">
+                        <h5 class="card-title">@Model.Post.content_title</h5>
+                        <p class="card-text">
+
+                            @Model.Post.content
+                        </p>
+                      
+                        <div class="row">
+                            <div class="col-8 pt-2">
+                                <p class="card-text d-inline"><small class="text-muted">@Model.Post.created_at |</small></p>
+                                <p class="card-text d-inline px-1"><small class="text-muted">@Model.Post.last_modified |</small></p>
+                                <p class="card-text d-inline px-1">
+                                    <a asp-area="Admin" asp-controller="User" asp-action="User_Profile" asp-route-username="@Model.Post.author_user_id">
+                                        <small class="text-muted">by @Model.Post.author_user_id |</small>
+                                    </a>
+                                </p>
+                                <p class="card-text d-inline">
+                                    <small class="text-muted align-content-end">Rating + @Model.Post.Unique_Id_Post</small>
+                                </p>
+                            </div>
+                            <div class="col-4">
+                                <div class="d-flex justify-content-end me-5">
+                                    <button class="btn new-dark-blue-outline text-dark mx-1 px-2 " asp-controller="" asp-action="" type="submit">
+                                        Like
+                                    </button>
+  
+                                    <a class="btn new-dark-blue text-white px-3" role="button" asp-controller="Post" asp-action="Reply" asp-route-fatherId="@Model.Post.Unique_Id_Post">Reply</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+
+
+
+                <section>
+                    <div class="container pt-2 ">
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-md-12 col-lg-10 border-bottom-0 shadow bg-mute pb-3">
+                                <div class="card text-dark">
+
+                                    <div class="card-body">
+                                        <h4>
+                                            Recent comments
+                                        </h4>
+                                        <p class="fw-light">Latest Comments section by users</p>
+                                    </div>
+
+                                
+                                @foreach(var replies in Model.PostReply)
+                                {
+                                    <div class="card post-card-main-stats">
+                                        <div class="card-body">
+                                            <h5 class="card-title">@replies.username</h5>
+                                            <p class="card-text post-card-content">@replies.content</p>
+                                          
+                                            <div class="row">
+                                                <div class="col-8 pt-2">
+                                                    <p class="card-text d-inline"><small class="text-muted">Created at:@replies.created_at |</small></p>
+                                                    <p class="card-text d-inline px-1"><small class="text-muted">Last Modified at:@replies.last_modified|</small></p>
+                                                    <p class="card-text d-inline px-1">
+                                                        <a asp-controller="User" asp-action="User_Profile" asp-route-username="author_user_id">
+                                                            <small class="text-muted">by @replies.username |</small>
+                                                        </a>
+                                                    </p>
+                                                    <p class="card-text d-inline">
+                                                        <small class="text-muted align-content-end">Rating @replies.likes</small>
+                                                    </p>
+
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="d-flex justify-content-end me-5">
+
+                                                        <button class="btn new-dark-blue-outline text-dark mx-1 px-2 " asp-controller="Accounts" asp-action="Login" type="submit">
+                                                            Like
+                                                        </button>
+                                                        <button class="btn new-dark-blue text-white px-3 type="submit" asp-controller="Accounts" asp-action="Register">
+                                                            Reply
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                }
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            
+        </div>
+    </div>
+</div>
+
+}

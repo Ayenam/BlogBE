@@ -1,0 +1,173 @@
+﻿@* @{
+    string contentTitle = Model.content_title;
+    ViewData["Title"] = $"{contentTitle} Post";
+} *@
+
+@model Blog.Models.Post
+
+<div class="container bg-mute shadow new-dark-blue rounded">
+    <div class="container col py-3 ">
+        <div class="row">
+            @if (Model != null)
+            {
+                var obj = Model; // Assuming Model is already the Post object with the specified Unique_Id_Post
+                <div class="card post-card-main-stats">
+                    <div class="card-body">
+                        <h5 class="card-title">@Model.content_title</h5>
+                        <p class="card-text">
+                            Unearth a new threat looming deep beneath the sands of Kehjistan, where a tool devised for good has been overtaken for demonic evils. Prepare to battle the elements as you maneuver through deadly Hazards, take on vicious Constructs, and earn mastery of Sanctuary’s newest challenges. With the help of a new companion at your side, you just might make it out alive.
+                            With over 8 trillion appearance combinations, each class boasts unique hairstyle selections and you can adjust your character’s appearance down to eye color, body markings, accessories, and more.
+                            From the items and loot you discover along your journey, you may find gear that stands out as a favorite. Evolve your playstyle by utilizing items as found, or adapt them by extracting their bonuses or crafting for specific modifications.
+                            As you level up, choose from categories of skills to make your character more powerful. Upgrade passives, offensive, defensive, elemental skills, enhance existing abilities, and more. Focus on a specific section
+                            In late game, continue to expand and modify your character’s build and skills by using Paragon points toward stat upgrades or more powerful effects. Theorycraft and design a specific build of your choosing.or pick and choose across specialties.
+                            Rise, wanderer. Starting on March 19, sealing your legacy in the absolute highest spot of each Ladder will earn you the ultimate spoil of war. Until April 2, if you secure the absolute top spot of any Ladder and are eligible for entry within the Official Rules, you’ll receive a personalized, custom autographed poster from the incredible Micah Ulrich.
+                            There will be two full weekly rotations of the Gauntlet to cement yourself as a Leaderboard Legend. Only true masters who stand at the top of the Gauntlet at the end of each week (Tuesday, 9 a.m. PT) will lay claim to the glory of these coveted spoils. On weekly reset, if you have the highest score in any given Ladder, you will be a winner for that week. Your efforts immortalized with an autographed print from Micah Ulrich that proudly displays your Battle.net ID.
+
+                            For Solo Ladders, there will be one winner each week per solo class Ladder, separated by Normal and Hardcore characters. For those that slay in company, there will be 18 total multiplayer winners per week across Hardcore and Normal. Winners for pairs, 3-player, and 4-player groups will all win a coveted print bearing their achievement.
+
+                            For full details on the Leaderboard Legends, check out the Forums here. For full details on The Gauntlet itself, our blog is available here. To see our official Gameplay Guide for the Gauntlet, it’s also available here. To see more of Micah’s illustrious work, check out his website and Instagram.
+
+                            Rise to the absolute pinnacle of the Gauntlet and let this bespoke art signify your undeniable prowess.
+
+                            May kills be swift and your Proofs aplenty.
+                            -The Diablo IV team
+                            Fixed an issue where Season Journey objectives would not display as completed when applicable.
+                            Fixed an issue where swapping between menus and the world map while in a Vault could cause the map to erroneously default to the Gatehall map.
+                            Fixed an issue where Hall of Ancients records did not denote if a character is playing on Hardcore difficulty.
+                            Fixed an issue where there was no Dungeon exit icon on the map or mini-map in Gauntlet dungeons.
+                            Fixed an issue where the Butcher's barrier would not show as being depleted.
+                            Fixed an issue where filtering the leaderboard to All Platforms did not include PC entries.
+                            Fixed an issue where the map icon for Pillars of Glory would only be visible when in close proximity to it.
+                            Dungeons
+                            Fixed an issue where the Tomb Lord boss in the Carrion Fields would not re-appear if the player left the boss arena immediately after placing the last statue.
+                            Fixed an issue where Spider Caller monsters could sometimes not spawn in the Sirocco Caverns, which would block progression.
+                            Fixed an issue where an insufficient amount of Animus Carriers could fail to spawn in the Dark Ravine, blocking progression.
+                            Fixed an issue where the Gauntlet could be re-entered after leaving via a Scroll of Escape.
+                            Gameplay
+                            Fixed an issue where equipping multiple instances of the Aspect of the Moonrise would only use the first instance equipped, instead of using the strongest version equipped.
+                            Fixed an issue where the Gauntlet Play Again button did not take the player to a new instance of the same Dungeon.
+                            Fixed an issue where a Nightmare Dungeon could be reset by using a Nightmare Sigil while inside the Dungeon. Nightmare Sigils can no longer be used while inside an active Nightmare Dungeon.
+                            Fixed an issue where Tortured Gifts in Helltide could not drop at least one Equipment.
+                            Accessibility
+                            Fixed an issue where the Screen Reader did not read out the View button when opening the Trials menu.
+                            Fixed an issue where the Screen Reader did not announce all the information in the Trials menu unless the player was in World Tier IV.
+                            Fixed an issue where the Screen Reader did not announce the Party Entry Trials and Weekly Result menus.
+                            Fixed an issue where the Screen Reader did not read options in drop-down menus in various instances.
+                            Fixed an issue where the Screen Reader did not announce available points in the Skill Tree.
+                            Accessibility
+                            Accessibility
+                            Accessibility
+                            Unearth a new threat looming deep beneath the sands of Kehjistan, where a tool devised for good has been overtaken for demonic evils. Prepare to battle the elements as you maneuver through deadly Hazards, take on vicious Constructs, and earn mastery of Sanctuary’s newest challenges. With the help of a new companion at your side, you just might make it out alive.
+                            With over 8 trillion appearance combinations, each class boasts unique hairstyle selections and you can adjust your character’s appearance down to eye color, body markings, accessories, and more.
+                            From the items and loot you discover along your journey, you may find gear that stands out as a favorite. Evolve your playstyle by utilizing items as found, or adapt them by extracting their bonuses or crafting for specific modifications.
+                            As you level up, choose from categories of skills to make your character more powerful. Upgrade passives, offensive, defensive, elemental skills, enhance existing abilities, and more. Focus on a specific section
+                            In late game, continue to expand and modify your character’s build and skills by using Paragon points toward stat upgrades or more powerful effects. Theorycraft and design a specific build of your choosing.or pick and choose across specialties.
+                            Rise, wanderer. Starting on March 19, sealing your legacy in the absolute highest spot of each Ladder will earn you the ultimate spoil of war. Until April 2, if you secure the absolute top spot of any Ladder and are eligible for entry within the Official Rules, you’ll receive a personalized, custom autographed poster from the incredible Micah Ulrich.
+                            There will be two full weekly rotations of the Gauntlet to cement yourself as a Leaderboard Legend. Only true masters who stand at the top of the Gauntlet at the end of each week (Tuesday, 9 a.m. PT) will lay claim to the glory of these coveted spoils. On weekly reset, if you have the highest score in any given Ladder, you will be a winner for that week. Your efforts immortalized with an autographed print from Micah Ulrich that proudly displays your Battle.net ID.
+
+                            For Solo Ladders, there will be one winner each week per solo class Ladder, separated by Normal and Hardcore characters. For those that slay in company, there will be 18 total multiplayer winners per week across Hardcore and Normal. Winners for pairs, 3-player, and 4-player groups will all win a coveted print bearing their achievement.
+
+                            For full details on the Leaderboard Legends, check out the Forums here. For full details on The Gauntlet itself, our blog is available here. To see our official Gameplay Guide for the Gauntlet, it’s also available here. To see more of Micah’s illustrious work, check out his website and Instagram.
+
+                            Rise to the absolute pinnacle of the Gauntlet and let this bespoke art signify your undeniable prowess.
+
+                            May kills be swift and your Proofs aplenty.
+                            -The Diablo IV team
+                            Fixed an issue where Season Journey objectives would not display as completed when applicable.
+                            Fixed an issue where swapping between menus and the world map while in a Vault could cause the map to erroneously default to the Gatehall map.
+                            Fixed an issue where Hall of Ancients records did not denote if a character is playing on Hardcore difficulty.
+                            Fixed an issue where there was no Dungeon exit icon on the map or mini-map in Gauntlet dungeons.
+                            Fixed an issue where the Butcher's barrier would not show as being depleted.
+                            Fixed an issue where filtering the leaderboard to All Platforms did not include PC entries.
+                            Fixed an issue where the map icon for Pillars of Glory would only be visible when in close proximity to it.
+                            Dungeons
+                            Fixed an issue where the Tomb Lord boss in the Carrion Fields would not re-appear if the player left the boss arena immediately after placing the last statue.
+                            Fixed an issue where Spider Caller monsters could sometimes not spawn in the Sirocco Caverns, which would block progression.
+                            Fixed an issue where an insufficient amount of Animus Carriers could fail to spawn in the Dark Ravine, blocking progression.
+                            Fixed an issue where the Gauntlet could be re-entered after leaving via a Scroll of Escape.
+                            Gameplay
+                            Fixed an issue where equipping multiple instances of the Aspect of the Moonrise would only use the first instance equipped, instead of using the strongest version equipped.
+                            Fixed an issue where the Gauntlet Play Again button did not take the player to a new instance of the same Dungeon.
+                            Fixed an issue where a Nightmare Dungeon could be reset by using a Nightmare Sigil while inside the Dungeon. Nightmare Sigils can no longer be used while inside an active Nightmare Dungeon.
+                            Fixed an issue where Tortured Gifts in Helltide could not drop at least one Equipment.
+                            Accessibility
+                            Fixed an issue where the Screen Reader did not read out the View button when opening the Trials menu.
+                            Fixed an issue where the Screen Reader did not announce all the information in the Trials menu unless the player was in World Tier IV.
+                            Fixed an issue where the Screen Reader did not announce the Party Entry Trials and Weekly Result menus.
+                            Fixed an issue where the Screen Reader did not read options in drop-down menus in various instances.
+                            Fixed an issue where the Screen Reader did not announce available points in the Skill Tree.
+                            Accessibility
+                            Accessibility
+                            Unearth a new threat looming deep beneath the sands of Kehjistan, where a tool devised for good has been overtaken for demonic evils. Prepare to battle the elements as you maneuver through deadly Hazards, take on vicious Constructs, and earn mastery of Sanctuary’s newest challenges. With the help of a new companion at your side, you just might make it out alive.
+                            With over 8 trillion appearance combinations, each class boasts unique hairstyle selections and you can adjust your character’s appearance down to eye color, body markings, accessories, and more.
+                            From the items and loot you discover along your journey, you may find gear that stands out as a favorite. Evolve your playstyle by utilizing items as found, or adapt them by extracting their bonuses or crafting for specific modifications.
+                            As you level up, choose from categories of skills to make your character more powerful. Upgrade passives, offensive, defensive, elemental skills, enhance existing abilities, and more. Focus on a specific section
+                            In late game, continue to expand and modify your character’s build and skills by using Paragon points toward stat upgrades or more powerful effects. Theorycraft and design a specific build of your choosing.or pick and choose across specialties.
+                            Rise, wanderer. Starting on March 19, sealing your legacy in the absolute highest spot of each Ladder will earn you the ultimate spoil of war. Until April 2, if you secure the absolute top spot of any Ladder and are eligible for entry within the Official Rules, you’ll receive a personalized, custom autographed poster from the incredible Micah Ulrich.
+                            There will be two full weekly rotations of the Gauntlet to cement yourself as a Leaderboard Legend. Only true masters who stand at the top of the Gauntlet at the end of each week (Tuesday, 9 a.m. PT) will lay claim to the glory of these coveted spoils. On weekly reset, if you have the highest score in any given Ladder, you will be a winner for that week. Your efforts immortalized with an autographed print from Micah Ulrich that proudly displays your Battle.net ID.
+
+                            For Solo Ladders, there will be one winner each week per solo class Ladder, separated by Normal and Hardcore characters. For those that slay in company, there will be 18 total multiplayer winners per week across Hardcore and Normal. Winners for pairs, 3-player, and 4-player groups will all win a coveted print bearing their achievement.
+
+                            For full details on the Leaderboard Legends, check out the Forums here. For full details on The Gauntlet itself, our blog is available here. To see our official Gameplay Guide for the Gauntlet, it’s also available here. To see more of Micah’s illustrious work, check out his website and Instagram.
+
+                            Rise to the absolute pinnacle of the Gauntlet and let this bespoke art signify your undeniable prowess.
+
+                            May kills be swift and your Proofs aplenty.
+                            -The Diablo IV team
+
+
+                        </p>
+                        <div class="row">
+                            <div class="col-8 pt-2">
+                                <p class="card-text d-inline"><small class="text-muted">@Model.created_at |</small></p>
+                                <p class="card-text d-inline px-1"><small class="text-muted">@Model.last_modified |</small></p>
+                                <p class="card-text d-inline px-1">
+                                    <a asp-controller="User" asp-action="User_Profile" asp-route-username="@Model.author_user_id">
+                                        <small class="text-muted">by @Model.author_user_id |</small>
+                                    </a>
+                                </p>
+                                <p class="card-text d-inline">
+                                    <small class="text-muted align-content-end">Rating + @Model.Unique_Id_Post</small>
+                                </p>
+                            </div>
+                            <div class="col-4">
+                                <div class="d-flex justify-content-end me-5">
+                                    <button class="btn new-dark-blue-outline text-dark mx-1 px-2 " asp-controller="Accounts" asp-action="Login" type="submit">
+                                        Like
+                                    </button>
+                                    <button class="btn new-dark-blue text-white px-3 type="submit" asp-controller="Accounts" asp-action="Register">
+                                        Reply
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+  
+        </div>
+    </div>
+
+@* POST*@
+    <div class="container col border-3 py-3 my-5>
+        <div class="row pt-5">
+
+            <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center mt-4 p-2">
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                            <span class="sr-only text-dark">Previous</span>
+                        </a>
+                    </li>
+                    <li class="page-item"><a class="page-link text-dark" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link text-dark" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link text-dark" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                            <span class="sr-only text-dark">Next</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
